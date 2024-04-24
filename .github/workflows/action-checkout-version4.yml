@@ -1,0 +1,13 @@
+name: Starter Workflow Demo Checkout Version 4
+
+on: [workflow_dispatch]
+
+jobs:
+  checkout-version-4 :
+    runs-on: ubuntu-20.04-ppc64le
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: demo workflow job for action checkout version 4  
+        run: echo This is a demo start workflow with action checkout version 4

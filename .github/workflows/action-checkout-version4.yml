@@ -3,7 +3,8 @@ name: Action checkout version 4
 on: [workflow_dispatch]
 
 jobs:
-  checkout-version-4 :
+  build:
+    name: action checkout verison 4
     runs-on: ubuntu-20.04-ppc64le
 
     steps:

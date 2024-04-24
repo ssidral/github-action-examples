@@ -1,4 +1,4 @@
-name: Starter Workflow Demo Action checkout version 2
+name: Action checkout version 2
 
 on: [workflow_dispatch]
 

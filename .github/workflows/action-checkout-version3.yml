@@ -1,0 +1,14 @@
+name: Action checkout version 3
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    name: action checkout version 3
+    runs-on: ubuntu-20.04-ppc64le
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: demo workflow job for action checkout version 3
+        run: echo This is a demo start workflow 

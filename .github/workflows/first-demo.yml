@@ -12,12 +12,14 @@ jobs:
       
       - name: Setup Cpp
         run: |
-          sudo apt install -y  build-essential
+          sudo apt-get install -y  build-essential
           echo g++ version after
           g++ --version
           
       - name: execution
-        run: g++ -o hello hello.cpp
+        run: |
+          g++ -o hello hello.cpp
+          hello
         
       # - name: exection of cpp
       #   run: apt install -y build-essential

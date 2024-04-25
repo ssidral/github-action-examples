@@ -11,14 +11,15 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Setup Cpp
-        uses: aminya/setup-cpp@v1
-        with:
-          compiler: gcc
+        run: 
+          sudo apt install -y g++-9
+          echo gcc version after
+          g++ --version
           
       - name: execution
-        run: gcc -o hello hello.cpp
+        run: g++ -o hello hello.cpp
         
       # - name: exection of cpp
       #   run: apt install -y build-essential
       - name: printing 
-        run: echo "executed"
+        run: echo "completed"

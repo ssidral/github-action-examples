@@ -1,4 +1,4 @@
-name: Action checkout version 3
+name: Cpp test
 
 on: [workflow_dispatch]
 

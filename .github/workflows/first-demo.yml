@@ -20,7 +20,7 @@ jobs:
         run: |
           g++ -o hello hello.cpp
           ls
-          #hello
+          ./hello
         
       # - name: exection of cpp
       #   run: apt install -y build-essential

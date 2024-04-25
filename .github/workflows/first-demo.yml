@@ -6,9 +6,19 @@ jobs:
   build:
     name: action checkout version 3
     runs-on: ubuntu-20.04-ppc64le
-
+           
     steps:
-      - uses: actions/checkout@v3
-
-      - name: demo workflow job for action checkout version 3
-        run: echo This is a demo start workflow 
+      - uses: actions/checkout@v2
+      
+      - name: Setup Cpp
+        uses: aminya/setup-cpp@v1
+        with:
+          compiler: gcc
+          
+      - name: execution
+        run: gcc -o hello hello.cpp
+        
+      # - name: exection of cpp
+      #   run: apt install -y build-essential
+      - name: printing 
+        run: echo "executed"

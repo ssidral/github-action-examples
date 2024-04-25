@@ -6,7 +6,7 @@ jobs:
   build:
     name: action checkout version 2
     runs-on: #ubuntu-latest #ubuntu-20.04-ppc64le
-      ubuntu-18.04-ppc64le
+      ubuntu-22.04-ppc64le
     steps:
       - uses: actions/checkout@v2
 

@@ -19,7 +19,8 @@ jobs:
       - name: execution
         run: |
           g++ -o hello hello.cpp
-          hello
+          ls
+          #hello
         
       # - name: exection of cpp
       #   run: apt install -y build-essential

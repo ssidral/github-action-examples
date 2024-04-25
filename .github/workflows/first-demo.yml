@@ -12,7 +12,7 @@ jobs:
       
       - name: Setup Cpp
         run: |
-          sudo apt-get install -y g++
+          sudo apt-get install -y g++-11
           echo g++ version after
           g++ --version
           

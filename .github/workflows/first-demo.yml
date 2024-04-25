@@ -12,8 +12,8 @@ jobs:
       
       - name: Setup Cpp
         run: |
-          sudo apt install -y g++-9
-          echo gcc version after
+          sudo apt install -y  build-essential
+          echo g++ version after
           g++ --version
           
       - name: execution

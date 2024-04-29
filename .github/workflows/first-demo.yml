@@ -6,7 +6,7 @@ jobs:
   build:
     name: cpp test example  
     runs-on: 
-        ubnutu-latest
+        ubuntu-latest
         # ubuntu-20.04-ppc64le
     steps:
       - uses: actions/checkout@v2
